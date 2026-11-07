@@ -1,13 +1,13 @@
 'use client'
-import { useState, useEffect } from "react"; // ADDED
+import { useState, useEffect } from "react"; 
 import Image from "next/image";
 import Link from "next/link";
 
 export default function Hero() {
-  // CHANGED: shoja new Date() er bodole state
+  
   const [banglaDate, setBanglaDate] = useState("");
 
-  // ADDED: tarikh shudhu browser-e set hobe
+  
 useEffect(() => {
   setBanglaDate(
     new Date().toLocaleDateString("bn-BD", {
@@ -23,9 +23,9 @@ useEffect(() => {
     <section className="w-full px-3 py-5 sm:px-5 sm:py-8 lg:px-8 lg:py-10">
       <div className="mx-auto flex w-full max-w-7xl flex-col-reverse items-center gap-5 overflow-hidden rounded-2xl border border-[#dfe7df] bg-[#fafcf9] p-4 sm:gap-7 sm:rounded-[24px] sm:p-6 md:flex-row md:justify-between md:gap-8 md:p-8 lg:p-10">
 
-        {/* Left Content */}
+        
         <div className="w-full min-w-0 text-center md:w-1/2 md:text-left lg:w-[55%]">
-          {/* CHANGED: min-h add, jate tarikh ashar age badge sonkuchito na hoy */}
+          
           <span className="inline-block min-h-[28px] rounded-full bg-[#e0f2e7] px-3 py-1 text-xs font-medium text-[#168044] sm:text-sm">
             {banglaDate}
           </span>
@@ -50,14 +50,14 @@ useEffect(() => {
           </div>
         </div>
 
-        {/* Right Illustration */}
+        
         <div className="w-full min-w-0 max-w-[240px] sm:max-w-[320px] md:w-1/2 md:max-w-none lg:w-[45%]">
           <Image
             src="/bazar-hero.png"
             alt="বাজার দর"
             width={540}
             height={510}
-            priogit rity
+            priority
             sizes="(max-width: 639px) 240px, (max-width: 767px) 320px, (max-width: 1023px) 45vw, 40vw"
             className="block h-auto w-full object-contain"
           />

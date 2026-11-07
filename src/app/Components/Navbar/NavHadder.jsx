@@ -1,5 +1,4 @@
-
-'use client'
+"use client";
 
 import Link from "next/link";
 import NavLinks from "./NavLinks";
@@ -10,7 +9,7 @@ import { useEffect, useState } from "react";
 const NavHadder = () => {
   const [banglaDate, setBanglaDate] = useState("");
 
-  // ADDED: tarikh shudhu browser-e set hobe
+  
   useEffect(() => {
     setBanglaDate(
       new Date().toLocaleDateString("bn-BD", {
@@ -39,9 +38,7 @@ const NavHadder = () => {
             <h1 className="text-lg font-bold leading-tight text-gray-900">
               বাজার দর
             </h1>
-            <p className="text-[10px] text-gray-500">
-              {banglaDate}
-            </p>
+            <p className="text-[10px] text-gray-500">{banglaDate}</p>
           </div>
         </Link>
 
@@ -54,7 +51,6 @@ const NavHadder = () => {
                 href="/profile"
                 className="flex items-center gap-2 rounded-lg p-2 transition hover:bg-gray-100"
               >
-
                 <span className="max-w-28 truncate text-sm font-semibold text-gray-800">
                   {session.user.name}
                 </span>
@@ -88,7 +84,7 @@ const NavHadder = () => {
       </div>
 
       <NavLinks />
-      <Marque/>
+      <Marque />
     </header>
   );
 };

@@ -109,7 +109,7 @@ async function HomeDetails({ params }) {
             </div>
           </section>
 
-          {/* Price Summary */}
+          
           <section className="mb-3 rounded-xl border border-[#e1e9e1] bg-white/80 p-4 sm:p-5">
             <h2 className="mb-3 text-sm font-bold">দামের সারসংক্ষেপ</h2>
 
@@ -138,7 +138,7 @@ async function HomeDetails({ params }) {
             </div>
           </section>
 
-          {/* Market Price Table */}
+          
           <section className="rounded-xl border border-[#e1e9e1] bg-white/80 p-4 sm:p-5">
             <div className="mb-4 flex flex-col justify-between gap-2 sm:flex-row sm:items-center">
               <h2 className="text-sm font-bold">বাজারভিত্তিক আজকের দাম</h2>

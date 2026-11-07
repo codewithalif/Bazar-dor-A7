@@ -19,12 +19,13 @@ const isUp = item?.change?.dir === "up";
 return (
 <Link
 href={`/home/${item.id}`}
-className="block w-full min-w-0 rounded-xl border border-[#E1E9E2] bg-[#FAFCFA] p-3 transition hover:shadow-md sm:p-4"
-> <div className="flex min-w-0 items-center gap-3"> <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-[#F0F5F0] text-xl">
-{item.image || item.categoryIcon || "🛒"} </div>
-
-```
-    <div className="min-w-0 flex-1">
+      className="block w-full min-w-0 rounded-xl border border-[#E1E9E2] bg-[#FAFCFA] p-3 transition hover:shadow-md sm:p-4"
+    >
+      <div className="flex min-w-0 items-center gap-3">
+      <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-[#F0F5F0] text-xl">
+        {item.image || item.categoryIcon || "🛒"}
+      </div>
+      <div className="min-w-0 flex-1">
       <h3 className="truncate text-sm font-bold text-[#202B25]">
         {item.nameBn}
       </h3>
