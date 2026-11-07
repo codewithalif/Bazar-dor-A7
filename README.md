@@ -29,9 +29,7 @@ A modern full-stack web application designed to monitor and manage market prices
 
 ---
 
-## 🚀 Local Setup
+## 👤 Author
 
-1. **Clone the repository:**
-   ```bash
-   git clone [https://github.com/codewithalif/bazar-dor-a7.git](https://github.com/codewithalif/bazar-dor-a7.git)
-   cd bazar-dor-a7
+Built by **Alif**
+
